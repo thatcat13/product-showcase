@@ -29,7 +29,7 @@ body {
 .navbar {
   background-color: rgba(255, 240, 237, 0.4);
   margin: 0;
-  height: 15%;
+  height: auto;
   width: 100%;
   text-align: center;
   padding: 20px;
@@ -44,7 +44,7 @@ body {
 
 h1 {
   float: left;
-  font-size: 4.5em;
+  font-size: 5.5em;
   margin: 0 20px;
   color: rgb(201, 122, 106);
   font-weight: 700;
@@ -66,6 +66,7 @@ a {
 .centerpiece {
   position: relative;
   display: inline-block;
+  z-index: -1;
 }
 
 #centerpiece {
@@ -77,26 +78,41 @@ a {
   height: 400px;
 }
 
-.text-box {
-  width: 15%;
-  height: auto;
-}
-
-.text-box p {
+.caption p {
   color: rgb(99, 58, 50);
   background-color: rgba(136, 136, 136, 0.6);
   box-shadow: 10px 10px 22px 5px #4e4a47;
   border-radius: 15px;
   position: absolute;
-  left: 50px;
+  left: 40px;
   top: 250px;
-  height: 75px;
-  width: 290px;
-  margin: 0 auto;
-  padding: 0;
+  height: 85px;
+  width: 300px;
+  margin: 5px auto;
   font-family: moonBold;
   font-weight: 600;
   font-size: 2.25em;
+}
+
+.img-heart1 {
+  position: absolute;
+  top: 110px;
+  left: 410px;
+  opacity: 0.6;
+}
+
+.img-heart2 {
+  position: absolute;
+  top: 80px;
+  left: 440px;
+  opacity: 0.5;
+}
+
+.img-heart3 {
+  position: absolute;
+  top: 60px;
+  left: 390px;
+  opacity: 0.4;
 }
 
 .bottom-content {
@@ -111,15 +127,15 @@ a {
   height: auto;
   margin-left: 20px;
   color: rgb(99, 58, 50);
-  font-size: 1.2em;
+  font-size: 1.5em;
   text-align: justify;
 }
 
 .gallery {
   width: 48%;
   float: right;
-  margin-top: 135px;
-  margin-right: 25px;
+  margin-top: 50px;
+  margin-right: 10px;
   background-color: rgba(255, 240, 237, 0.7);
   padding: 3px;
   border-radius: 20px;
@@ -154,15 +170,14 @@ a {
   border-radius: 10px;
 }
 
-.herbal-container {
+.herbal-container, .mint-container, .puer-container, .rose-container {
   float: left;
   position: relative;
   width: 125px;
   height: 125px;
-  
 }
 
-.herbal-container:hover .overlay {
+.herbal-container:hover .overlay, .mint-container:hover .overlay, .puer-container:hover .overlay, .rose-container:hover .overlay   {
   opacity: 0.75;
 }
 
@@ -179,10 +194,30 @@ form {
   overflow: auto;
 }
 
-h3 {
+#blends {
   text-align: left;
   font-size: 2em;
+  margin-bottom: 0;
 }
+
+#mailing {
+  text-align: left;
+  font-size: 2em;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+
+h3:before {
+    content: "";
+    display: inline-block;
+    background: url("../img/heart.png") no-repeat;
+    width: 30px;
+    height: 30px;
+    transform: translate(0, 25%);
+    margin-right: 10px;
+}
+
 .form label, input {
   float: left;
   display: inline-block;
