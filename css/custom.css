@@ -69,6 +69,7 @@ a {
 }
 
 #centerpiece {
+  display: inline-block;
   position: relative;
   border-radius: 20px;
   box-shadow: 10px 10px 5px 5px #888888;
@@ -96,4 +97,30 @@ a {
   font-family: moonBold;
   font-weight: 600;
   font-size: 2.25em;
+}
+
+.description-text {
+  float: left;
+  display: iblock;
+  width: 40%;
+  height: auto;
+}
+
+.gallery {
+  width: 45%;
+  float: right;
+  margin: 15px;
+}
+
+.gallery img {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  margin: 2px;
+  opacity: 0.9;
+  border-radius: 10px;
+}
+
+.gallery img:nth-child(4n+1) {
+  clear: both;
 }
