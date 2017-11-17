@@ -5,3 +5,56 @@
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
+@font-face {
+  font-family: "moonFlower";
+  src: url("../fonts/moon.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "moonBold";
+  src: url("../fonts/moonBold.ttf") format("truetype");
+}
+
+body {
+  font-family: moonFlower;
+}
+.main {
+  text-align: center;
+}
+
+.navbar {
+  background-color: rgba(255, 240, 237, 0.4);
+  margin: 0;
+  height: 15%;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  overflow: auto;
+}
+
+
+h1 {
+  float: left;
+  font-size: 4.5em;
+  margin: 0 20px;
+  color: rgb(201, 122, 106);
+  font-weight: 700;
+}
+
+li {
+  list-style: none;
+  display: inline;
+  float: right;
+  margin: 10px;
+  font-size: 2em;
+}
+
+a {
+  color: rgb(201, 122, 106);
+  text-decoration: none;
+}
+
+#centerpiece {
+  display: inline-block;
+}
