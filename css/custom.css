@@ -66,11 +66,9 @@ a {
 .centerpiece {
   position: relative;
   display: inline-block;
-  z-index: -1;
 }
 
 #centerpiece {
-  display: inline-block;
   position: relative;
   border-radius: 20px;
   box-shadow: 10px 10px 5px 5px #888888;
@@ -207,8 +205,7 @@ form {
   margin-bottom: 20px;
 }
 
-
-h3:before {
+h3::before {
     content: "";
     display: inline-block;
     background: url("../img/heart.png") no-repeat;
@@ -235,6 +232,13 @@ h3:before {
 
 .button {
   overflow: auto;
+}
+
+.corner-img img {
+  float: right;
+  opacity: 0.55;
+  margin-top: 80px;
+  margin-right: 80px;
 }
 
 button {
