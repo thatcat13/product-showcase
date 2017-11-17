@@ -18,6 +18,9 @@
 
 body {
   font-family: moonFlower;
+  background-image: url("../img/dust_scratches.png");
+  object-fit: cover;
+  background-repeat: none;
 }
 .main {
   text-align: center;
@@ -30,7 +33,12 @@ body {
   width: 100%;
   text-align: center;
   padding: 20px;
-  overflow: auto;
+}
+
+.navbar:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 
@@ -55,6 +63,37 @@ a {
   text-decoration: none;
 }
 
-#centerpiece {
+.centerpiece {
+  position: relative;
   display: inline-block;
+}
+
+#centerpiece {
+  position: relative;
+  border-radius: 20px;
+  box-shadow: 10px 10px 5px 5px #888888;
+  width: 600px;
+  height: 400px;
+}
+
+.text-box {
+  width: 15%;
+  height: auto;
+}
+
+.text-box p {
+  color: rgb(99, 58, 50);
+  background-color: rgba(136, 136, 136, 0.6);
+  box-shadow: 10px 10px 22px 5px #4e4a47;
+  border-radius: 15px;
+  position: absolute;
+  left: 50px;
+  top: 250px;
+  height: 75px;
+  width: 290px;
+  margin: 0 auto;
+  padding: 0;
+  font-family: moonBold;
+  font-weight: 600;
+  font-size: 2.25em;
 }
