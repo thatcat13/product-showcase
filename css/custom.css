@@ -103,7 +103,6 @@ a {
   margin-top: 60px;
   margin-bottom: 60px;
   overflow: auto;
-  border: solid 1px black;
 }
 
 .description-text {
@@ -111,25 +110,69 @@ a {
   width: 45%;
   height: auto;
   margin-left: 20px;
+  color: rgb(99, 58, 50);
+  font-size: 1.2em;
+  text-align: justify;
 }
 
 .gallery {
-  width: 45%;
+  width: 48%;
   float: right;
-  margin: 15px;
+  margin-top: 135px;
+  margin-right: 25px;
+  background-color: rgba(255, 240, 237, 0.7);
+  padding: 3px;
+  border-radius: 20px;
+  position: relative;
 }
 
 .gallery img {
-  width: 110px;
-  height: 110px;
+  width: 120px;
+  height: 120px;
   object-fit: cover;
   margin: 2px;
-  opacity: 0.9;
+  opacity: 0.8;
   border-radius: 10px;
+  box-shadow: 10px 10px 5px 5px #888888;
 }
 
 .gallery img:nth-child(4n+1) {
   clear: both;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #888888;
+  border-radius: 10px;
+}
+
+.herbal-container {
+  float: left;
+  position: relative;
+  width: 125px;
+  height: 125px;
+  
+}
+
+.herbal-container:hover .overlay {
+  opacity: 0.75;
+}
+
+.text {
+  color: white;
+  font-size: 13px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 form {
@@ -144,6 +187,7 @@ h3 {
   float: left;
   display: inline-block;
   font-size: 1.2em;
+  color: rgb(99, 58, 50);
 }
 
 .form label:nth-child(1n+1) {
@@ -162,6 +206,7 @@ button {
   float: left;
   margin-top: 20px;
   font-size: 1.2em;
+  color: rgb(99, 58, 50);
 }
 
 .icon-div {
