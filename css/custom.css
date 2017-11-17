@@ -99,11 +99,18 @@ a {
   font-size: 2.25em;
 }
 
+.bottom-content {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  overflow: auto;
+  border: solid 1px black;
+}
+
 .description-text {
   float: left;
-  display: iblock;
-  width: 40%;
+  width: 45%;
   height: auto;
+  margin-left: 20px;
 }
 
 .gallery {
@@ -123,4 +130,43 @@ a {
 
 .gallery img:nth-child(4n+1) {
   clear: both;
+}
+
+form {
+  overflow: auto;
+}
+
+h3 {
+  text-align: left;
+  font-size: 2em;
+}
+.form label, input {
+  float: left;
+  display: inline-block;
+  font-size: 1.2em;
+}
+
+.form label:nth-child(1n+1) {
+  clear: both;
+}
+
+.form input:nth-child(1n+1) {
+  clear: both;
+}
+
+.button {
+  overflow: auto;
+}
+
+button {
+  float: left;
+  margin-top: 20px;
+  font-size: 1.2em;
+}
+
+.icon-div {
+  float: left;
+  font-size: 1.75em;
+  margin-top: 20px;
+  color: #4f4e4c;
 }
