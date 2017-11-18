@@ -224,6 +224,11 @@ h3::before {
   display: inline-block;
   font-size: 1.2em;
   color: rgb(99, 58, 50);
+  border-radius: 5px;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-size: 20px;
 }
 
 .form label:nth-child(1n+1) {
@@ -251,6 +256,7 @@ button {
   margin-top: 20px;
   font-size: 1.2em;
   color: rgb(99, 58, 50);
+  border-radius: 5px;
 }
 
 .icon-div {
