@@ -253,15 +253,20 @@ h3::before {
 
 button {
   float: left;
-  margin-top: 20px;
+  margin-top: 12px;
+  margin-bottom: 20px;
   font-size: 1.2em;
   color: rgb(99, 58, 50);
   border-radius: 5px;
 }
 
+button:hover {
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.24), 5px 5px 5px 5px rgba(0,0,0,0.19);
+}
+
 .icon-div {
   float: left;
   font-size: 1.75em;
-  margin-top: 20px;
+  margin-top: 5px;
   color: rgba(99, 58, 50, 0.85);
 }
